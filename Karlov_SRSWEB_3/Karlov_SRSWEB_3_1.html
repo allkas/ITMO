@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SRSWEB_3_1</title>
+        <link rel="stylesheet" href="./styles/app.css">
+    </head>
+    <body>
+        <h1>Продажа квартир Квадрито</h1>
+        <p>Заполните форму ниже о квартире, которую хотите выставить на продажу.</p>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <font><strong>Город</strong></font>  
+                    </td>
+                    <td>
+                        <select name="city">
+                            <option value="-1">выберете Город для продажи</option>
+                            <option value="0">Москва</option>
+                            <option value="1">Санкт-Петербург</option>
+                            <option value="2">Новосибирск</option>
+                            <option value="-3">Воронеж</option>
+                            <option value="4">Вологда</option>
+                            <option value="5">Магадан</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Материалы здания</strong></font>
+                    </td>
+                    <td>
+                        <input name="type_material" type="checkbox" id="one" value="0">
+                        <label for="one">Кирпич</label><br/>
+                        <input name="type_material" type="checkbox" id="two" value="1">
+                        <label for="two">Блоки</label><br/>
+                        <input name="type_material" type="checkbox" id="three" value="2">
+                        <label for="three">Монолит</label><br/>
+                        <input name="type_material" type="checkbox" id="four"  value="3">
+                        <label for="four">Панель</label><br/>
+                        <input name="type_material" type="checkbox" id="five" value="4">
+                        <label for="five">Дерево</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Общая площадь (м<sup>2</sup>)</strong> </font>
+                    </td>
+                    <td>
+                        <input name="GeneralAreaStart" type="number" placeholder="От" min="30" max="150">
+                        <input name="GeneralAreaEnd" type="number" placeholder="До" min="30" max="150">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Площадь кухни (м<sup>2</sup>)</strong></font>
+                    </td>
+                    <td>
+                        <input name="AreaKitchenStart" type="number" placeholder="От" min="30" max="150">
+                        <input name="AreaKitchenEnd" type="number" placeholder="До" min="30" max="150">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Жилая площадь (м<sup>2</sup>)</strong> </font>
+                    </td>
+                    <td>
+                        <input name="AreaLiveStart" type="number" placeholder="От" min="30" max="1500">
+                        <input name="AreaLiveEnd" type="number" placeholder="До" min="30" max="1500">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Год постройки </strong></font> 
+                    </td>
+                    <td>
+                        <input name="BuildYearStart" type="number" placeholder="От" min="1950" max="2021">
+                        <input name="BuildYearEnd" type="number" placeholder="До" min="1950" max="2021">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Этаж</strong> </font>
+                    </td>
+                    <td>
+                        <input name="FloorStart" type="number" placeholder="От" min="1" max="21">
+                        <input name="FloorEnd" type="number" placeholder="До" min="1" max="21"><br>
+                        <label for="notFloorFirst">Не первый</label>
+                        <input type="checkbox" name="notFloorFirst" id="notFloorFirst" value="not">
+                        <label for="notFloorEnd">Не последний</label>
+                        <input type="checkbox" name="notFloorEnd" id="notFloorEnd" value="not">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Этажей в доме</strong> </font>
+                    </td>
+                    <td>
+                        <input name="BuildFloorStart" type="number" placeholder="От" min="1" max="21">
+                        <input name="BuildFloorEnd" type="number" placeholder="До" min="1" max="21">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>До метро (по карте):</strong> </font>
+                    </td>
+                    <td>
+                        <select name="distance">
+                            <option value="-1">Выберите расстояние</option>
+                            <option value="500m">До 7 мин. пешком (до 500 м.)</option>
+                            <option value="1000m">До 15 мин. пешком (до 1 км.)</option>
+                            <option value="1500m">До 21 мин. пешком (до 1,5 км.)</option>
+                            <option value="3000m">До 40 мин. пешком (до 3 км.)</option>
+                            <option value="5000m">До 1 часа пешком (до 5 км.)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font><strong>Продавец</strong></font> 
+                    </td>
+                    <td>
+                        <input id="none" type="radio" name="seller" value="none">
+                        <label for="none">Не важно</label><br/>
+                        <input id="agent" type="radio" name="seller" value="agent">
+                        <label for="agent">Агенство</label><br/>
+                        <input id="owner" type="radio" name="seller" value="owner">
+                        <label for="owner">Собственник</label><br/>
+                    </td>
+                </tr>
+
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" value="Показать предложение">
+                        <input type="reset" value="Сбросить фильтры">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

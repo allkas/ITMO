@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 3_1</title>
+</head>
+<body>
+    <h3>Продажа квартир КВАДРИТО</h3>
+    <p>Заполните форму ниже о квартире, которую хотите выставить на продажу.</p>
+    <form method="POST" action="SRSWEB_3_1.html">
+        <table>
+            <tr>
+                <td>
+                    <font size="3">
+                        <strong>Город:</strong>
+                    </font>
+                </td>
+                <td>
+                    <select name="city">
+                        <option value="-1">Выберите город для продажи__________</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="3">Новосибирск</option>
+                        <option value="4">Воронеж</option>
+                        <option value="5">Вологда</option>
+                        <option value="6">Магадан</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Материалы здания:</strong></font>  
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="type_material" value="-1"> Пример!
+                    </label><br/>
+                    <input id="one" type="checkbox" name="type_material" value="0">
+                    <label for="one">Кирпич</label><br/>
+                    <input id="two" type="checkbox" name="type_material" value="1">
+                    <label for="two">Блоки</label><br/>
+                    <input id="three" type="checkbox" name="type_material" value="2">
+                    <label for="three">Монолит</label><br/>
+                    <input id="four" type="checkbox" name="type_material" value="3">
+                    <label for="four">Панель</label><br/>
+                    <input id="five" type="checkbox" name="type_material" value="4">
+                    <label for="five">Дерево</label>
+               
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Общая площадь (м<sup>2</sup>)</strong></font>
+                </td>
+                <td>
+                    <input name="All_start" type="number" placeholder="ОТ" max="100" min="20">
+                    <input name="All_end" type="number" placeholder="ДО" max="100" min="20">
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Площадь кухни (м<sup>2</sup>)</strong></font>
+                </td>
+                <td>
+                    <input name="kitchen_start" type="number" placeholder="ОТ" max="100" min="20">
+                    <input name="kitchen_end" type="number" placeholder="ДО" max="100" min="20">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Жилая площадь (м<sup>2</sup>)</strong></font>
+                </td>
+                <td>
+                    <input name="live_start" type="number" placeholder="ОТ" max="100" min="20">
+                    <input name="live_end" type="number" placeholder="ДО" max="100" min="20">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Год постройки</strong></font>
+                </td>
+                <td>
+                    <input name="year_start" type="number" placeholder="ОТ" max="100" min="20">
+                    <input name="year_end" type="number" placeholder="ДО" max="100" min="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font size="3"><strong>Этаж</strong></font>
+                </td>
+                <td>
+                    <input name="floor_start" type="number" placeholder="ОТ" max="100" min="20">
+                    <input name="floor_end" type="number" placeholder="ДО" max="100" min="20"><br/>
+                    <label for="not_floor_end">Не последний</label>
+                    <input type="checkbox" name="not_floor_end" id="not_floor_end" value="not">
+                    
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Этажей в доме</strong></font>
+                </td>
+                <td>
+                    <input name="count_floor_start" type="number" placeholder="ОТ" max="1" min="0">
+                    <input name="count_floor_end" type="number" placeholder="ДО" max="21" min="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font size="3"><strong>До метро (по карте):</strong></font>
+                </td>
+                <td>
+                    <select name="around">
+                        <option value="-1">Выберите расстояние__________</option>
+                        <option value="500m">До 7 мин. пешком (до 500 м.)</option>
+                        <option value="1000m">До 15 мин. пешком (до 1 км.)</option>
+                        <option value="1500m">До 21 мин. пешком (до 1,5 км.)</option>
+                        <option value="3000m">До 40 мин. пешком (до 3 км.)</option>
+                        <option value="5000m">До 1 часа пешком (до 5 км.)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <font size="3"><strong>Продавец</strong></font>  
+                </td>
+                <td>            
+                    <input id="none" type="radio" name="seller" value="none">
+                    <label for="none">Не важно</label><br/>
+                    <input id="agent" type="radio" name="seller" value="agent">
+                    <label for="agent">Агенство</label><br/>
+                    <input id="owner" type="radio" name="seller" value="owner">
+                    <label for="owner">Собственник</label><br/>        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Показать предложение">
+                    <input type="reset" value="Сбросить фильтры">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
