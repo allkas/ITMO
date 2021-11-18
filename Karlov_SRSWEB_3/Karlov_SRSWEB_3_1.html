@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>SRSWEB_3_1</title>
         <link rel="stylesheet" href="./styles/app.css">
     </head>
@@ -10,10 +11,10 @@
         <h1>Продажа квартир Квадрито</h1>
         <p>Заполните форму ниже о квартире, которую хотите выставить на продажу.</p>
         <form>
-            <table>
+            <table cellpadding="0" width="100%" cellspacing="0">
                 <tr>
                     <td>
-                        <font><strong>Город</strong></font>  
+                        <font  size="3"><strong>Город</strong></font>  
                     </td>
                     <td>
                         <select name="city">
@@ -49,8 +50,8 @@
                         <font><strong>Общая площадь (м<sup>2</sup>)</strong> </font>
                     </td>
                     <td>
-                        <input name="GeneralAreaStart" type="number" placeholder="От" min="30" max="150">
-                        <input name="GeneralAreaEnd" type="number" placeholder="До" min="30" max="150">
+                        <input name="kitchen_m_start" type="number" placeholder="От" min="3" max="20">
+                        <input name="GeneralAreaEnd" type="number" placeholder="До" min="3" max="20">
                     </td>
                 </tr>
                 <tr>

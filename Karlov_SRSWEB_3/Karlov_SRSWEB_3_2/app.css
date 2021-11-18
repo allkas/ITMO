@@ -1,0 +1,37 @@
+.columns-2 {
+    column-count: 2;
+    column-rule: 2px;
+}
+
+
+p {
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
+}
+
+.backimg {
+    background-image: url(./img/ban.jpg);    
+}
+
+.menuimg {
+    background-image: url(./img/menu.png);
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: red;
+}
+
+body {
+    width: 790px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;  
+    background-color: #ebebeb;
+}
