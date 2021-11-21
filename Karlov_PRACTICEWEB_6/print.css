@@ -1,0 +1,147 @@
+body, html {
+    padding: 0;
+    margin: 0; 
+    height: 100%;
+    background-color: #038084;
+}
+body {background:#444 url('img/body.jpg');color:#444;font:normal 1.2em Verdana,Arial,sans-serif;height:100%;padding-bottom:1px;/* force scrollbars */padding-top:64px}
+
+
+aside.rightSide {
+    width: 200px;
+    float: right;
+    }
+aside.rightSide ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+aside.rightSide ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border: 1px solid white;
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+}
+aside.rightSide ul > li > a:hover {
+    font-weight: bold;
+    background-color: #038084;
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    width: 950px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+section {
+    margin-bottom: 72px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+section:first-child > h3 {
+    margin-top: 0;
+    padding-top: 30px;
+}
+section > h3 > span:before {
+    counter-increment: list;
+    content: "Статья " counter(list) ": ";
+}
+section a {
+    text-align: center;
+    float: right;
+    display: inline-block;
+    background-color: red;
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+article {
+    width: 748px;
+    height: auto;
+    float: left; 
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    counter-reset: list 0;
+    padding-bottom: 15px;
+}
+
+main {
+    min-height: 100%;
+    background-color: #cdcdcd;
+}
+
+footer {
+    border-top: 5px solid blue;
+    width: 950px;
+    height: 195px; 
+    margin-top: -200px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer nav ul a {
+    text-decoration: none;
+    color: black;
+}
+footer nav ul a:hover {
+    text-decoration: underline;
+}
+footer nav p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.clearing {
+    height: 200px;
+    clear: both;
+}
+
+.firstMenu {
+    float: left;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.rightMenu {
+    float: right;
+    width: 250px;
+    margin-right: 50px;
+}
+.centerMenu {
+    margin: 0 0 0 50px;
+    float: left;
+}
+
+@media print and (orientation: portrait) {
+	main article section:nth-child(3) {
+	page-break-after: avoid; 
+	}
+}
+
+@media print {
+	main{
+	background-color: lime;
+	}
+	main article section:nth-child(3) {
+	page-break-after: always; 
+	}
+	article {
+	float: none;
+	width: 950px;
+	border: 0px;
+	}
+	aside, footer {
+	display: none;
+	}
+}
