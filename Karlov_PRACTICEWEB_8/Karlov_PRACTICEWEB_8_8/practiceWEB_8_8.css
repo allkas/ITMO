@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    }
+body {
+    perspective: 900px; /*Удаленность пользователя от центра объекта / от точки, вокруг которой вращается куб*/
+    perspective-origin: center -5em; /*Точка, с которой пользователь наблюдает объект. Под углом 180 градусов -5em по оси X.*/
+    }
+.container {
+    transform-style: preserve-3d; /*Определение 3D свойства объекта*/
+    animation: rotate 10s infinite linear; /*Название анимации + время выполнения цикла + зацикливание + кривая скорости выполнения*/
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left:250px;
+    }
+@keyframes rotate {
+    100% {
+    transform: rotate3d(0, 1, 0, 360deg);  /*Вращение в 3D по оси x (которая на самом деле y) с полным оборотом вокруг своей оси */
+    }
+    }
+div.side {
+    width: 200px; 
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    outline: 1px solid #000;
+    outline-offset: 25px;  /*Сдвиг контуров всех сторон на 25px*/
+    opacity: 0.8;  /*Прозрачность*/
+    }
+.front {
+    background: url("images/pic6.png");
+    }
+    
+.left {
+    transform: translateX(-100px) rotateY(90deg) translateX(100px); /*сдвинуть на 100пкс влево, повернуть на 90градусов, сдвинуть на 100пкс вправо*/
+    background: url("images/pic1.png");
+    }
+.right {
+    transform: translateX(100px) rotateY(90deg) translateX(100px); /*сдвинуть на 100пкс вправо, повернуть на 90градусов, сдвинуть на 100пкс вправо*/
+    background: url("images/pic2.png");
+    }
+.up {
+    transform: translateY(-100px) rotateX(90deg) translateY(-100px); /*сдвинуть вверх на 100пкс, повернуть на 90градусов, сдвинуть вверх на 100пкс*/
+    background: url("images/pic3.png");
+    }
+.down {
+    transform: translateY(100px) rotateX(90deg) translateY(-100px); /*сдвинуть вниз на 100пкс, повернуть на 90градусов, сдвинуть вверх на 100пкс*/
+    background: url("images/pic4.png");
+    }
+.back {
+    transform: translateZ(-200px); /*сдвинуть по оси z назад на 200пкс*/
+    background: url("images/pic5.png");
+    }

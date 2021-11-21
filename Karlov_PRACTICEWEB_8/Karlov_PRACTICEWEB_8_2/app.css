@@ -1,0 +1,32 @@
+body {
+    background-color: #cecece;
+    padding: 32px; /**/
+}
+button {
+    margin: 25px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lime;
+    padding: 15px 35px;
+}
+button:hover {
+    outline: 1px solid white;
+    outline-offset: -2px;  /*cдвиг рамки внутрь на 2px*/
+    cursor: pointer;   /*изменение курсора*/
+}
+.button1 {
+    background-color: #2563E9;
+    transition: 1s; /*время на выполнение изменений внешнего вида*/
+}
+.button1:hover {
+    background-color: #4478E9;  /*цвет при наведении курсора*/
+}
+.button2 {
+    background-color: #2563E9;
+    transition: 1s;
+    transition-property: background;
+}
+.button2:hover {
+    background-color: #E95AD1;
+    outline: none; /*белая рамка не применяется*/
+}
