@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4.4 Сортировка массива</title>
+</head>
+<body>
+    <script>
+    {
+        "use strict";
+        let arr = ['Книги', 'Фильмы', 'Видео', 'Контакты', 'Поисковик', 1, 5, 3, 2];
+        const sortAndJoin = (unsortedArr) => {
+            let toStringArr = [];
+            for (let i = 0; i < unsortedArr.length; i += 1) {
+                toStringArr.push(String(unsortedArr[i]));
+            }
+            let arr = [];
+            for(let j = 0; j < toStringArr.length; j += 1) {
+                if (typeof(toStringArr[j]) !== 'undefined') {
+                    arr.push(toStringArr[j]);
+                }            
+            }
+            arr.sort();
+        //Ваш код
+            document.write('<pre>');
+            let arrToStr = arr.join('|');
+            document.writeln(arrToStr);
+            document.write('</pre>');
+            //Возвращаем уже строку отсортированную и c применением join. Не забываем, что
+            // undefined нужно убирать:)
+        }
+        document.write(sortAndJoin(arr));
+    }
+    </script>
+</body>
+</html>

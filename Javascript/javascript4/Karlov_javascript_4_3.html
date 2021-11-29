@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задание 4.3. Объединение массива</title>
+</head>
+<body>
+<script>
+    {
+    "use strict";
+    let prоducts = [];
+    prоducts[0] = 'Блины';
+    prоducts[1] = 'Квас';
+    prоducts[3] = 'Пельмени';
+    prоducts[4] = 'Икра';
+    function printProduct(arr) {
+        let tmpArr = [];
+        for(let i = 0; i < arr.length; i++) {
+            if (arr[i] !== undefined) {
+                tmpArr.push(arr[i]);
+            }
+        }
+        //С полученным результатом tmpArr осуществите команду join с разделителем "/"
+        // return tmpArr;
+        document.write('<pre>');
+        let arrToStr = tmpArr.join('/');
+        document.writeln(arrToStr);
+        document.write('</pre>');
+    }
+    //Здесь вызовите функцию printProduct.
+    //Передайте ей массив с продуктами
+    //И далее выведите результат на страницу используя команду document.write
+    printProduct(prоducts);
+    }
+</script>
+</body>
+</html>

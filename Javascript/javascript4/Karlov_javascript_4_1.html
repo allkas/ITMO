@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Задание 4.1. Вывод массива</title>
+</head>
+<body>
+<script>
+    {
+    "use strict";
+    //Код объявления массива
+    //массив нужно добавить в глобальный объект window
+    //синтаксис: window.products = [];
+    let products = ['Блины', 'Квас', 'Пельмени', 'Икра'];
+    let tmp = '';
+    function printProduct(arr) {
+        for(let i = 0; i < arr.length; i++) {
+        //Ваш код
+            tmp += (arr[i] + '<br>');
+        }
+        document.write(`<body>${tmp}</body>`);
+        /*
+        Код вывода информации на страницу - document.write();
+        document.write все переписывает каждый раз при вызове. Поэтому лучше всего сначала
+        построить строку в переменной tmp и далее ее уже вывести.
+        Например так:
+        let tmp = '';
+        for(let i = 0; i < products.length; i++)
+        {
+        tmp = tmp + products[i] + '<br>';
+        }
+        document.write(tmp);
+        */
+    }
+    printProduct(products);
+    }
+</script>
+</body>
+</html>
