@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Задание 3.3. Вызов функции с аргументами </title>
+    <style>
+        h1 {
+            color:#FF0000;
+            font-size:18px;
+            text-decoration:underline;
+        }
+    </style>
+    <script>
+        function Wages (oldWages, coefficientWages) {
+            let newWages = oldWages * coefficientWages;
+            let date=document.getElementById("date").innerHTML
+            document.getElementById("newW").innerHTML="Ваша новая зарплата "+newWages +" рублей. " + date;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="newW"></h1>
+    <h6 id='date'>11 января 2011 года</h6>
+    <p><span></span></p>
+    <script>
+        let oldW = prompt('Введите старую зарплату.', ' ');
+        let coefficientW = prompt('Введите процент повышения в зарплате.', ' ');
+        Wages(oldW, coefficientW);
+    </script>
+</body>
+</html>
