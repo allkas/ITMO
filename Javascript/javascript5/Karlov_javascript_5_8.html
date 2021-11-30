@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+   <script>
+   {
+   "use strict";
+   function getDateProperties(milliseconds) {
+      let date = new Date(milliseconds);
+      let result = {};
+      result['day'] = date.getDate();
+      result['month'] = date.getMonth()+1;
+      result['year'] = date.getFullYear();
+      result['hour'] = date.getHours();
+      result['minutes'] = date.getMinutes();
+      result['seconds'] = date.getSeconds();
+      return result;
+   }
+   function getNameOfMonth(month) {
+   //Ваш код
+      switch (month) {
+         case 1:
+            return "январь"
+         case 2:
+            return "февраль"
+         case 3:
+            return "март"
+         case 4:
+            return "апрель"
+         case 5:
+            return "май"
+         case 6:
+            return "июнь"
+         case 7:
+            return "июль"
+         case 8:
+            return "август"
+         case 9:
+            return "сентябрь"
+         case 10:
+            return "октябрь"
+         case 11:
+            return "ноябрь"
+         case 12:
+            return "декабрь"
+      }
+   }
+   function printPrettyDate(neededDate) {
+      let date = getDateProperties(neededDate);
+      let str = '';
+      str = `${date.day} ${getNameOfMonth(date.month)} ${date.year}, `; 
+      str = str + `${date.hour}:${date.minutes}:${date.seconds}`;
+      return str;
+   }
+   document.write(printPrettyDate(1628440235430));
+   }
+   </script>
+</body>
+</html>

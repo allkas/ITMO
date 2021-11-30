@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Задание 5.3. Демонстрация метода setInterval()</title>
+ <script>
+ {
+ "use strict";
+
+ let counter = 10;
+ let countdown = () => {
+ document.getElementById('cont').innerHTML=counter--;
+ if (counter < 0) {
+ //Остановить таймер...
+ clearInterval(interval_id);
+ }
+ }
+
+ let interval_id = setInterval(() => countdown(), 1000); //запустить таймер с интервалом в 1 секунду и передать первым аргументом countdown.
+ }
+</script>
+</head>
+<body>
+ <p id='cont'></p>
+</body>
+</html>
