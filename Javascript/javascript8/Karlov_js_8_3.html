@@ -9,20 +9,16 @@
     function buildOptions(objData, root) {
     
         for (let item in objData) {
-            let options = document.createElement('option');
-            // console.log(options.className);
-            options.setAttribute(`${item.name}`, `${item.value}`);
-            console.log(options.getAttribute("Classic"))
-            options.innerText;
-            // document.root.appendChild(options);
-            console.log(item.value)
+            let option = document.createElement('option');
+            option.value = objData[item].value;
+            option.innerText = objData[item].name;
+            root.appendChild(option);
         //Создать виртуальный dom-элемент option. Подсказка document.createElement
         //Указать в атрибуте value Значение из объекта objData (item.value, item.name)
         //Указать текстовое значение для option. Подсказка option.innerText
         //добавить созданный и настроенный элемент в root. Подсказка root.appendChild
         }
-        document.root.appendChild(options);
-    }
+    };
 
 
     function ResetOptionList(ElementValue) {
