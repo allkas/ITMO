@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+h2 {
+  color: #005c7b;
+  font-family: Philosopher;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #005c7b;
+  font-family: Philosopher;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+  background-color: #008daa;
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+.header a {
+  color: #d4d0c8;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.header a:hover {
+  color: #fff;
+}
+
+.icon_menu li {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.icon_menu li:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.main_menu ul {
+  list-style-type: disc;
+}
+
+.main_menu li {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #06bac5;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 28px;
+}
+
+.main_menu a {
+  color: #06bac5;
+}
+
+.main_menu a:hover {
+  text-decoration: none;
+}
+
+.main_menu li:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.header_main {
+  background-color: #eeeeed;
+}
+
+.title h1 {
+  color: #005c7b;
+  font-family: Philosopher;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: right;
+  margin-top: 60px;
+}
+
+.img_layer img {
+  margin-top: -50px;
+  width: 150%;
+  height: auto;
+}
+
+.cvalif {
+  color: #005c7b;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 60px;
+}
+
+.img_layer input {
+  width: 315px;
+  height: 60px;
+  background-color: #005c7b;
+  color: #eeeeed;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  border-radius: 45px;
+  margin-top: 30px;
+}
+
+.call_course:hover {
+  background-color: #eb477b;
+  color: #Fff;
+}
+
+.about {
+  padding-top: 137px;
+  padding-bottom: 239px;
+}
+
+.about h2 {
+  margin-bottom: 55px;
+}
+
+.about p {
+  color: #005c7b;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+p.card_subtext {
+  color: #008daa;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justifyCenter;
+}
+
+.cards {
+  margin-top: 60px;
+}
+
+.cards img {
+  margin-bottom: 23px;
+}
+
+.cards_item {
+  min-width: 280px;
+}
+
+.preferences {
+  background-color: #eeeeed;
+  padding-top: 140px;
+  padding-bottom: 300px;
+}
+
+.preferences li {
+  color: #005c7b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 88px;
+  text-align: left;
+}
+
+.preferences h2 {
+  margin-bottom: 45px;
+}
+
+.questions {
+  padding-top: 142px;
+  padding-bottom: 376px;
+}
+
+.questions h2 {
+  margin-bottom: 36px;
+}
+
+.accordion {
+  margin-bottom: 30px;
+}
+
+.quest {
+  margin-bottom: 30px;
+  color: #008daa;
+  font-family: Philosopher;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.quest_here {
+  color: #005c7b;
+  font-family: Philosopher;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.quest_here a {
+  color: #005c7b;
+}
+
+.quest_here a:hover {
+  color: #eb477b;
+}
+
+.btn-link:hover {
+  color: #008daa;
+}
+
+.title_acc {
+  color: #008daa;
+  font-family: Philosopher;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.text_inside {
+  color: #005c7d;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.comments {
+  background-color: #eeeeed;
+  padding-top: 139px;
+  padding-bottom: 337px;
+}
+
+.comments h2 {
+  margin-bottom: 56px;
+}
+
+.comments img {
+  margin-top: 16px;
+  margin-bottom: 27px;
+  border-radius: 50%;
+}
+
+.fa-arrow-circle-right,
+.fa-arrow-circle-left {
+  font-size: 35px;
+  color: #ccc;
+}
+
+.big_text {
+  color: #005c7b;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.person_name {
+  color: #008daa;
+  font-family: Philosopher;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer {
+  padding-top: 141px;
+  padding-bottom: 212px;
+}
+
+.footer h2 {
+  margin-bottom: 80px;
+}
+
+.footer_down {
+  background-color: #008daa;
+}
+
+.icon_menu_footer li {
+  font-size: 50px;
+}
+
+.icon_menu_footer a:hover {
+  color: #eb477b;
+}
+
+.icon_menu_footer a {
+  color: #008daa;
+}
+
+.footer_link a {
+  color: #008daa;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  text-decoration: underline;
+  min-width: 280px;
+}
+
+.footer_link a:hover {
+  color: #eb477b;
+}
+
+.study {
+  color: #005c7d;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.left_study_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social {
+  color: #005c7d;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 30px;
+}
+
+.footer_down {
+  color: #eeeeed;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer_down a {
+  color: #eeeeed;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrow_study_block {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header a {
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  .icon_menu {
+    margin-top: 20px;
+  }
+
+  .arrow_study_block {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  .footer_down {
+    font-size: 18px;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .main_menu li {
+    font-size: 18px;
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .main_menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .preferences {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .preferences li {
+    font-size: 22px;
+  }
+
+  .big_text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .fa-arrow-circle-left,
+.fa-arrow-circle-right {
+    color: #eb477b;
+  }
+
+  .questions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .comments {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .quest {
+    font-size: 25px;
+  }
+
+  .quest_here {
+    font-size: 25px;
+  }
+
+  .header a {
+    font-size: 20px;
+  }
+
+  .main_menu li {
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main_menu li {
+    font-size: 14px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .main_menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-xl {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img_layer input {
+    font-size: 16px;
+  }
+
+  .cvalif {
+    font-size: 18px;
+  }
+
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .preferences {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .preferences li {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .preferences ul {
+    margin: 0;
+  }
+
+  .questions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title_acc {
+    font-size: 18px;
+  }
+
+  .text_inside {
+    font-size: 16px;
+  }
+
+  .quest {
+    font-size: 20px;
+  }
+
+  .quest_here {
+    font-size: 20px;
+  }
+
+  .comments {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .fa-arrow-circle-left, .fa-arrow-circle-right {
+    color: #eb477b;
+  }
+
+  .person_name {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .study {
+    font-size: 20px;
+  }
+
+  .footer_link a {
+    font-size: 20px;
+  }
+
+  .social {
+    font-size: 25px;
+  }
+
+  .icon_menu_footer li {
+    font-size: 25px;
+  }
+
+  .footer_down {
+    font-size: 14px;
+  }
+
+  .footer_down a {
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}

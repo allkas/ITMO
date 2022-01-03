@@ -1,9 +1,6 @@
 
 .wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+
   display: flex;  
   
   -webkit-flex-flow: row wrap;
@@ -29,10 +26,12 @@
 
 .aside-2 {
   background: #A5BFF2;
+  height:1080px;
+  min-height: 100%;
 }
 
 @media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+  .aside { flex: 2 auto; }
 }
 
 @media all and (min-width: 800px) {
@@ -42,6 +41,6 @@
   .aside-2 { order: 3; }
 }
 
-body {
-  padding: 4em; 
-} 
+/* body {
+  padding: 1em; 
+}  */
