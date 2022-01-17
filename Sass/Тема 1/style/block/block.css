@@ -1,0 +1,15 @@
+@import url('./__header/block-header.css');
+@import url('./__about/block-about.css');
+@import url('./__kurs/block-kurs.css');
+
+
+/*================================ */
+
+
+.block {
+    width: 100%;
+    height: 100%;
+}
+
+
+

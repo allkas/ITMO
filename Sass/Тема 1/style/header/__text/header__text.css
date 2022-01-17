@@ -1,0 +1,16 @@
+
+.header__text {
+    top: 0;
+    left: 0;
+    width: 280px;
+    padding-left: 104px;
+
+}
+
+
+.header__text_upercase {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}

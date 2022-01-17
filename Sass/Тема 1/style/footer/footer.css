@@ -1,0 +1,28 @@
+
+
+.footer__content {
+    width: 1300px;
+    display: flex;
+    font-family: 'HelveticaNeueCyr-Light';
+    color: white;
+    font-size: 24px;
+    padding: 47px 0 0 352px;
+    letter-spacing: -0.4px;
+}
+.footer__address {
+    width: 300px;
+}
+
+.footer__socseti {
+    padding-top: 16px;
+}
+
+.footer__email {
+    margin: 5px 0 0 70px;
+}
+
+.footer__phone {
+    margin: 4px 0 0 204px;
+}
+
+/*================================ */

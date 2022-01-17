@@ -1,0 +1,28 @@
+
+
+
+.button__text {
+    padding: 17px 0 0 56px;
+    letter-spacing: -0.2px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'HelveticaNeueCyr-Medium';
+}
+
+.button__text_upercase {
+    padding: 17px 0 0 56px;
+    letter-spacing: -0.9px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'HelveticaNeueCyr-Medium';
+    text-transform: uppercase;
+}
+
+.button-big__text{
+    font-size: 30px;
+    text-align: center;
+    padding: 36px 0 0 0;
+    letter-spacing: 0.1px;
+}

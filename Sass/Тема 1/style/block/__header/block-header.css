@@ -1,0 +1,37 @@
+
+
+
+.block__header {
+    background-image: url('../../../img/fon.png');
+    padding-bottom: 159px;
+}
+
+.block__header_content {
+    padding: 179px 0 0 354px;
+}
+
+.block__header_content-title{
+    width: 122px;
+}
+
+.block__header_content-name {
+    width: 200px;
+    padding: 8px 0 0 4px;
+    letter-spacing: 1.1px;
+    line-height: 59.3px;
+}
+
+.block__header_about {
+    font-size: 24px;
+    padding-left: 3px;
+    letter-spacing: -0.2px;
+}
+
+.block__header_button {
+    margin: 87px 0 55px 0;
+}
+
+.block__header_learning {
+    display: flex;
+}
+/*================================ */

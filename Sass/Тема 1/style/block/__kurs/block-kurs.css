@@ -1,0 +1,35 @@
+
+.block__kurs {
+    background-color: #130b5b;
+}
+
+
+.block__kurs_content {
+    width: 1200px;
+    padding: 72px 0 0 351px;
+}
+.block__kurs_content-pading{
+    padding: 32px 0 207px 5px;
+}
+
+.block__kurs_row{
+    display: flex;
+    padding: 14px 0 0 0;
+    
+}
+.block__kurs_row-padding{
+    padding: 7px 0 0 2px;
+
+}
+.block__kurs_row-column{
+    width: 580px;
+}
+.block__kurs_row-leter{
+    letter-spacing: -1.2px;
+}
+
+.block__kurs_button {
+    margin: 2px 0 0 66px;
+}
+
+

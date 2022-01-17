@@ -1,0 +1,9 @@
+@import url('./__header/item-block__header.css');
+@import url('./__text/item-block__text.css');
+
+
+.item-block {
+    margin: 0px 85px 0px 2px;
+}
+
+/*================================ */

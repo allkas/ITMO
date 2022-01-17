@@ -1,0 +1,56 @@
+@import url('./header/header.css');
+@import url('./menu/menu.css');
+@import url('./button/button.css');
+@import url('./text/text.css');
+@import url('./block/block.css');
+@import url('./item-block/item-block.css');
+@import url('./footer/footer.css');
+@import url('./socseti/socseti.css');
+@import url('../fonts/fontawesome/css/all.css');
+
+
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Medium';
+    src: url('../fonts/helveticaneuecyr-medium.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Light';
+    src: url('../fonts/helveticaneuecyr-light.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Thin';
+    src: url('../fonts/helveticaneuecyr-thin.ttf');
+}
+
+/* Основные стили================================ */
+
+.header__text .header__text_upercase ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    height: 112px !important;
+    background-color: #080742;
+
+}
+
+/*================================ */

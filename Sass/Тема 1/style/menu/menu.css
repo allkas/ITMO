@@ -1,0 +1,23 @@
+
+/* .menu {
+    
+} */
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.menu__item {
+    justify-content: space-between;
+    font-size: 24px;
+    padding-bottom: 10px;
+    width: 485px;
+    font-family: 'HelveticaNeueCyr-Medium';
+}
+
+.menu__item_link{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,21 @@
+.block__about {
+    background-color: #040440;
+    padding-bottom: 97px;
+}
+
+.block__about_content {
+    display: flex;
+}
+
+.block__about_img {
+    padding: 100px 0 0 395px;
+}
+
+.block__about_main{
+    padding: 90px 0 0 85px;
+}
+.block__about_text{
+    width: 815px;
+
+}
+

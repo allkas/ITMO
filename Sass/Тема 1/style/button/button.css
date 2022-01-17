@@ -1,0 +1,26 @@
+@import url('./__text/button__text.css');
+
+
+.button-little {
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: #C93555;
+    width: 257px;
+    height: 73px;
+    border-radius: 40px;
+}
+
+.button-big {
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: #C93555;
+    width: 538px;
+    height: 155px;
+    border-radius: 30px;
+    outline: 1px dashed #130b5b;
+    outline-offset: -1px;
+}
+
+/*================================ */
