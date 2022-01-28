@@ -1,125 +1,56 @@
-html, body {
-    margin: 0;
+* {
     padding: 0;
-    height: 100%;
-}
-
-header, footer {
-    height: 100px;
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190828/pngtree-dark-vector-abstract-background-image_302715.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-p {
     margin: 0;
-}
-
-/*header:before {
-    content: "Псевдоселектор до элемента";
-    display: block;
-    background-color: lime;
-    width: 100%;
-    height: 50px;
-    margin-top: -100px;
-}
-
-
-header:after {
-    content: "Псевдоселектор после элемента";
-    display: block;
-    background-color: blue;
-    width: 100%;
-    height: 50px;
-    margin-top: 50px;
-}*/
-
-header {
-    margin-bottom:  -100px;
-    z-index: 2;
-}
-
-.headerContent {
-    width: 1024px;
-    margin:  0 auto 0px auto;
-}
-
-main {
-    height: 100%;
-    min-height: 250px;
-    margin: 0 auto;
-    z-index: 0;
-    position: relative;
-    background-color: yellow;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    box-sizing: border-box;
-}
-
-.mainContent {
-    width: 1024px;
-    height: 100%;
-    margin: 0 auto 0px auto;
-}
-
-.mainContent:after {
-    clear: both;
-    display: table;
-    content:  " ";
-}
-
-.navigation {
-    width: 10%;
-    height: 100%;
-    background-color: #ccc;
-    float: left;
-}
-
-.navigation ul, .sidebar ul {
-    margin: 0;
-    padding: 0;
-}
-
-.navigation ul li, .sidebar ul li {
-    margin: 0;
-    list-style-type: none;
-}
-
-.sidebar {
-    width: 10%;
-    height: 100%;
-    background-color: #ccc;
-    float: right;
-}
-
-
-article {
-    float: left;
-    width: 80%;
-}
-
-
-
-footer {
-    height: 100px;
-    /*Задаем высоту футеру*/
-    background-color: #99CC32;
-    position: relative;
-    margin-top: -100px;
-    /*нижний отступ 0*/
-    width: 100%;
-    /*Ширина на всю страницу*/
-}
-
-.footerContent {
-    width: 1024px;
-    margin: 0 auto;
-}
-
-
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-    main {
-        background-color: blue;
     }
-}
+body {
+    perspective: 900px; /*Удаленность пользователя от центра объекта / от точки, вокруг которой вращается куб*/
+    perspective-origin: center -5em; /*Точка, с которой пользователь наблюдает объект. Под углом 180 градусов -5em по оси X.*/
+    }
+.container {
+    transform-style: preserve-3d; /*Определение 3D свойства объекта*/
+    animation: rotate 10s infinite linear; /*Название анимации + время выполнения цикла + зацикливание + кривая скорости выполнения*/
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left:250px;
+    }
+@keyframes rotate {
+    100% {
+    transform: rotate3d(0, 1, 0, 360deg); /*Вращение в 3D по оси x (которая на самом деле y) с полным оборотом вокруг своей оси */
+    }
+    }
+div.side {
+    width: 200px; 
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    outline: 1px solid #000;
+    outline-offset: 25px; /*Сдвиг контуров всех сторон на 25px*/
+    opacity: 0.8; /*Прозрачность*/
+    }
+.front {
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
+    /*Дальше идет описание изменения положения каждой из сторон по отношению к .front для создания куба*/
+.left {
+    transform: translateX(-100px) rotateY(90deg) translateX(100px); /*сдвинуть на 100пкс влево, повернуть на 90градусов, сдвинуть на 100пкс вправо*/
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
+.right {
+    transform: translateX(100px) rotateY(90deg) translateX(100px); /*сдвинуть на 100пкс вправо, повернуть на 90градусов, сдвинуть на 100пкс вправо*/
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
+.up {
+    transform: translateY(-100px) rotateX(90deg) translateY(-100px); /*сдвинуть вверх на 100пкс, повернуть на 90градусов, сдвинуть вверх на 100пкс*/
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
+.down {
+    transform: translateY(100px) rotateX(90deg) translateY(-100px); /*сдвинуть вниз на 100пкс, повернуть на 90градусов, сдвинуть вверх на 100пкс*/
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
+.back {
+    transform: translateZ(-200px); /*сдвинуть по оси z назад на 200пкс*/
+    background: url("https://cdn.pixabay.com/photo/2020/08/31/20/23/abstract-background-5533525_960_720.jpg");
+    }
