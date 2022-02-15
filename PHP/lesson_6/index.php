@@ -1,15 +1,13 @@
 <?php
-   $ot = 0;
-   $not = 0;
-      if ($_POST["q1"] == "a"){$ot++;} else {$not++;}
-      if ($_POST["q2"] == "a"){$ot++;} else {$not++;}
+    $k=0;
+    if (is_array($_GET["answer"])){
+    foreach($_GET["answer"] as $value) 
+        {
+        if ($value=='Верно') { 
+        $k=$k+1;
+        }
+        echo $value, '<br>'; 
+        }
+    echo "У вас {$k} правильных ответов", '<br>'; 
+    }
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
-</head>
-<body>
-    <p>Правильных ответов:</p>
-    <p>Неправильных ответов:</p>
-</body> 
-</html>
